@@ -11,9 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		47960F2E2EB9A1B60064910A /* TodoTracker */ = {
+		47960F2E2EB9A1B60064910A /* TodoTrackerApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TodoTracker;
+			path = TodoTrackerApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		47960F232EB9A1B60064910A = {
 			isa = PBXGroup;
 			children = (
-				47960F2E2EB9A1B60064910A /* TodoTracker */,
+				47960F2E2EB9A1B60064910A /* TodoTrackerApp */,
 				47960F2D2EB9A1B60064910A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				47960F2E2EB9A1B60064910A /* TodoTracker */,
+				47960F2E2EB9A1B60064910A /* TodoTrackerApp */,
 			);
 			name = TodoTracker;
 			packageProductDependencies = (

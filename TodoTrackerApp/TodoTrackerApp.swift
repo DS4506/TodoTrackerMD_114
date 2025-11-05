@@ -2,7 +2,7 @@
 import SwiftUI
 
 @main
-struct TodoApp2App: App {
+struct TodoTrackerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
