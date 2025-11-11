@@ -7,6 +7,7 @@ struct AppCompactStack: View {
     var body: some View {
         NavigationStack {
             List {
+
                 Section("Lists") {
                     ForEach(groups) { group in
                         NavigationLink {
@@ -16,6 +17,15 @@ struct AppCompactStack: View {
                         }
                     }
                 }
+
+                Section("Tools") {   // <— NEW
+                    NavigationLink {
+                        DrawingView()
+                    } label: {
+                        Label("Canvas", systemImage: "pencil.tip")
+                    }
+                }
+
                 Section("Account") {
                     NavigationLink { ProfileView() } label: {
                         Label("Profile", systemImage: "person.crop.circle")

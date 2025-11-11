@@ -20,11 +20,16 @@ struct DetailArea: View {
                     PlaceHolderView(title: "List not found",
                                     message: "Choose another list in the sidebar.")
                 }
+
+            case .canvas:                  
+                DrawingView()
+
             case .profile:
                 ProfileView()
+
             case .none:
-                PlaceHolderView(title: "No list selected",
-                                message: "Choose a list from the sidebar to get started.")
+                PlaceHolderView(title: "No selection",
+                                message: "Choose an item from the sidebar to get started.")
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

@@ -7,6 +7,7 @@ struct AppSidebarView: View {
 
     var body: some View {
         List(selection: $selection) {
+
             Section("Lists") {
                 ForEach(groups) { group in
                     NavigationLink(value: SideBarSelection.group(group.id)) {
@@ -14,6 +15,13 @@ struct AppSidebarView: View {
                     }
                 }
             }
+
+            Section("Tools") {   // <— NEW
+                NavigationLink(value: SideBarSelection.canvas) {
+                    Label("Canvas", systemImage: "pencil.tip")
+                }
+            }
+
             Section("Account") {
                 NavigationLink(value: SideBarSelection.profile) {
                     Label("Profile", systemImage: "person.crop.circle")
